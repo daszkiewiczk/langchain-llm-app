@@ -2,6 +2,8 @@ FROM python:3.10
 
 ENV PYTHONUNBUFFERED 1
 
+EXPOSE 8501
+
 WORKDIR /app
 
 COPY requirements.txt /tmp/requirements
@@ -14,4 +16,4 @@ RUN python -m venv /venv && \
 
 ENV PATH="/venv/bin:$PATH"
 
-CMD ["python", "main.py"]
+CMD ["streamlit", "run", "main.py", "--server.address=0.0.0.0"]

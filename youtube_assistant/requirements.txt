@@ -1,0 +1,8 @@
+langchain>=0.0.305,<0.1
+openai>=0.28.1,<0.29
+streamlit>=1.27.0,<1.28
+python-dotenv>=1.0.0,<1.1
+wikipedia>=1.4.0,<1.5
+youtube-transcript-api>=0.6.1,<0.7
+tiktoken>=0.5.1,<0.6
+faiss-cpu>=1.7.4,<1.8
